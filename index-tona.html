@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Portal Oficial do Município de belas - Angola. Informações sobre serviços públicos, turismo, cultura e administração municipal.">
+	<meta name="keywords" content="belas, Município Angola, Governo Local, Serviços Públicos Angola">
+	<meta name="author" content="Governo do Município de belas">
+
+	<title>Município de belas - Portal Oficial</title>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png">
+
+	<!-- Fontes -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style-tona.css">
+
+	<!-- OG Tags -->
+	<meta property="og:title" content="Município de belas - Portal Oficial">
+	<meta property="og:description"
+		content="Portal Oficial do Município de belas - Angola. Informações sobre serviços públicos, turismo, cultura e administração municipal.">
+	<meta property="og:image" content="assets/images/og-image.jpg">
+	<meta property="og:url" content="https://belas.gov.ao">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+	<!-- Header Top -->
+	<header class="header-top">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<div class="header-top-left d-flex">
+						<div class="header-top-contact">
+							<i class="fas fa-phone-alt"></i> +244 923 456 789
+						</div>
+						<div class="header-top-contact">
+							<i class="fas fa-envelope"></i> geral@belas.gov.ao
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="header-top-right d-flex justify-content-md-end">
+						<div class="header-top-contact">
+							<a href="#"><i class="fas fa-sign-in-alt"></i> Área do Cidadão</a>
+						</div>
+						<div class="header-top-contact">
+							<div class="theme-switch-wrapper">
+								<label class="theme-switch" for="checkbox">
+									<input type="checkbox" id="checkbox">
+									<div class="slider round"></div>
+								</label>
+								<span class="ml-2"><i class="fas fa-moon"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Navegação -->
+	<nav class="navbar navbar-expand-lg navbar-light bootsnav">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">belas<span>Gov</span></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#home">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#municipio">O Município</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#tourism">Turismo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#team">Governo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#news">Notícias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contactos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-primary ml-lg-2" href="#"><i class="fas fa-search"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Banner Slider -->
+	<section id="home" class="welcome-hero">
+		<!-- Slide 1 -->
+		<div class="slide active" style="background-image: url('assets/images/welcome-hero/banner2.jpg')">
+			<div class="slide-content">
+				<h2>Bem-vindo ao Município de belas</h2>
+				<p>Um município em crescimento, comprometido com o desenvolvimento sustentável e o bem-estar dos seus
+					cidadãos.</p>
+				<a href="#services" class="btn btn-primary">Nossos Serviços</a
+			</div>
+		</div>
+
+		<!-- Slide 2 -->
+		<div class="slide" style="background-image: url('assets/images/welcome-hero/banner.jpg')">
+			<div class="slide-content">
+				<h2>Desenvolvimento Urbano Sustentável</h2>
+				<p>Investindo em infraestruturas modernas para melhorar a qualidade de vida de todos os cidadãos.</p>
+				<a href="#municipio" class="btn btn-primary">Conheça o Município</a>
+			</div>
+		</div>
+
+		<!-- Slide 3 -->
+		<div class="slide" style="background-image: url('assets/images/welcome-hero/banner2.jpg')">
+			<div class="slide-content">
+				<h2>Cultura e Tradição</h2>
+				<p>Preservando nossas raízes enquanto construímos um futuro próspero para as próximas gerações.</p>
+				<a href="#tourism" class="btn btn-primary">Explorar Cultura</a>
+			</div>
+		</div>
+
+		<!-- Indicadores -->
+		<div class="slide-indicators">
+			<div class="slide-indicator active"></div>
+			<div class="slide-indicator"></div>
+			<div class="slide-indicator"></div>
+		</div>
+	</section>
+
+	<!-- Sobre o Município -->
+	<section id="municipio" class="py-5">
+		<div class="container">
+			<div class="section-header">
+				<h2>O Nosso Município</h2>
+				<p>Conheça mais sobre belas e sua história</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="municipio-text">
+						<h3>História e Geografia</h3>
+						<p>belas é um município angolano localizado na província de Luanda. Com uma população
+							diversificada, o município tem experimentado um crescimento significativo nos últimos anos,
+							tornando-se um importante centro urbano.</p>
+
+						<h3>Dados Demográficos</h3>
+						<ul class="list-unstyled municipio-data">
+							<li><i class="fas fa-users text-danger mr-2"></i> <strong>População:</strong>
+								Aproximadamente 500.000 habitantes</li>
+							<li><i class="fas fa-map-marked-alt text-danger mr-2"></i> <strong>Área:</strong> 120 km²
+							</li>
+							<li><i class="fas fa-calendar-alt text-danger mr-2"></i> <strong>Ano de Fundação:</strong>
+								1985</li>
+						</ul>
+
+						<a href="#" class="btn btn-outline mt-3">História Completa</a>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="municipio-image position-relative">
+						<img src="assets/images/maps.webp" alt="Panorama de belas"
+							class="img-fluid rounded shadow">
+						<div class="image-caption bg-danger text-white p-2 rounded-bottom">
+							<p class="mb-0">Vista panorâmica do município de belas</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Bairros -->
+			<div class="mt-5">
+				<h3 class="text-center mb-4">Principais Bairros</h3>
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<i class="fas fa-home fa-3x text-danger mb-3"></i>
+								<h4>belas 1</h4>
+								<p>Zona residencial com comércio local e infraestruturas básicas.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<i class="fas fa-city fa-3x text-danger mb-3"></i>
+								<h4>belas 2</h4>
+								<p>Área em desenvolvimento com novos projetos habitacionais.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 border-0 shadow-sm">
+							<div class="card-body text-center">
+								<i class="fas fa-building fa-3x text-danger mb-3"></i>
+								<h4>Zango</h4>
+								<p>Novo polo de crescimento com planejamento urbano moderno.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Serviços Públicos -->
+	<section id="services" class="services-section py-5 bg-white">
+		<div class="container">
+			<div class="section-header">
+				<h2>Serviços Públicos</h2>
+				<p>Acesse os principais serviços oferecidos pelo município</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-file-alt"></i>
+						</div>
+						<h3>Registo Civil</h3>
+						<p>Emissão de bilhetes de identidade, registo de nascimento e outros documentos civis.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="registro-civil">Ver
+							Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Download Formulário</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-clinic-medical"></i>
+						</div>
+						<h3>Saúde Pública</h3>
+						<p>Informações sobre postos de saúde, hospitais e programas de saúde municipal.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="saude-publica">Ver
+							Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Agendar Consulta</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-school"></i>
+						</div>
+						<h3>Educação</h3>
+						<p>Matrículas escolares, informações sobre escolas municipais e programas educativos.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="educacao">Ver Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Calendário Escolar</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-truck"></i>
+						</div>
+						<h3>Obras Públicas</h3>
+						<p>Informações sobre projetos de infraestrutura, reparações e manutenção urbana.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="obras-publicas">Ver
+							Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Reportar Problema</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-tree"></i>
+						</div>
+						<h3>Meio Ambiente</h3>
+						<p>Programas de reciclagem, preservação ambiental e gestão de resíduos sólidos.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="meio-ambiente">Ver
+							Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Participar</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="service-card p-4 text-center">
+						<div class="service-icon">
+							<i class="fas fa-hand-holding-usd"></i>
+						</div>
+						<h3>Assistência Social</h3>
+						<p>Programas de apoio às famílias carentes e pessoas em situação de vulnerabilidade.</p>
+						<button class="btn btn-primary btn-sm modal-trigger" data-modal="assistencia-social">Ver
+							Detalhes</button>
+						<a href="#" class="btn btn-outline btn-sm mt-2">Solicitar Apoio</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<a href="#" class="btn btn-primary">Ver Todos os Serviços</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Turismo e Cultura -->
+	<section id="tourism" class="tourism-section py-5">
+		<div class="container">
+			<div class="section-header">
+				<h2>Turismo e Cultura</h2>
+				<p>Descubra os pontos turísticos e a rica cultura de belas</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e1.jpg" alt="Mercado Municipal" class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Mercado Municipal</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> Centro</span>
+								<span><i class="fas fa-clock"></i> 8h-18h</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e2.jpg" alt="Centro de Artesanato"
+								class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Centro de Artesanato</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> belas 1</span>
+								<span><i class="fas fa-clock"></i> 9h-17h</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e3.jpg" alt="Parque Municipal" class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Parque Municipal</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> Zango</span>
+								<span><i class="fas fa-clock"></i> 6h-20h</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e4.jpg" alt="Museu Comunitário" class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Museu Comunitário</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> belas 2</span>
+								<span><i class="fas fa-clock"></i> 10h-16h</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e4.jpg" alt="Feira Cultural" class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Feira Cultural</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> Praça Central</span>
+								<span><i class="fas fa-clock"></i> Sábados</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="tourism-card">
+						<div class="tourism-img">
+							<img src="assets/images/explore/e5.jpg" alt="Centro Cultural" class="img-fluid">
+						</div>
+						<div class="tourism-info">
+							<h3>Centro Cultural</h3>
+							<div class="tourism-meta">
+								<span><i class="fas fa-map-marker-alt"></i> Av. Principal</span>
+								<span><i class="fas fa-clock"></i> 8h-22h</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<a href="#" class="btn btn-primary">Guia Turístico Completo</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Equipe Governamental -->
+	<section id="team" class="team-section py-5 bg-white">
+		<div class="container">
+			<div class="section-header">
+				<h2>Governo Municipal</h2>
+				<p>Conheça a equipe que administra o município</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="team-card">
+						<div class="team-img">
+							<img src="assets/images/entidades/logo_sp.jpeg" alt="Prefeito" class="img-fluid">
+						</div>
+						<div class="team-info">
+							<h3>Eng. João Baptista</h3>
+							<p>Prefeito Municipal</p>
+							<div class="team-social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fas fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="team-card">
+						<div class="team-img">
+							<img src="assets/images/entidades/logo_pna.jpg" alt="Vice-Prefeito" class="img-fluid">
+						</div>
+						<div class="team-info">
+							<h3>Dra. Maria Fernandes</h3>
+							<p>Vice-Prefeita</p>
+							<div class="team-social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fas fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="team-card">
+						<div class="team-img">
+							<img src="assets/images/entidades/logo_pir.jpeg" alt="Diretor Saúde" class="img-fluid">
+						</div>
+						<div class="team-info">
+							<h3>Dr. Carlos Mendes</h3>
+							<p>Diretor de Saúde</p>
+							<div class="team-social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fas fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="team-card">
+						<div class="team-img">
+							<img src="assets/images/entidades/logoSic.jpeg" alt="Diretor Educação" class="img-fluid">
+						</div>
+						<div class="team-info">
+							<h3>Prof. Ana Silva</h3>
+							<p>Diretora de Educação</p>
+							<div class="team-social">
+								<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fas fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<a href="#" class="btn btn-primary">Ver Todos os Departamentos</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Estatísticas -->
+	<section class="stats-section py-5 text-white">
+		<div class="container">
+			<div class="section-header">
+				<h2>belas em Números</h2>
+				<p>Dados e estatísticas sobre o nosso município</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 mb-4">
+					<div class="stat-item">
+						<div class="stat-number">500K+</div>
+						<div class="stat-label">Habitantes</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+					<div class="stat-item">
+						<div class="stat-number">120</div>
+						<div class="stat-label">Km² de Área</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+					<div class="stat-item">
+						<div class="stat-number">42</div>
+						<div class="stat-label">Escolas</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 mb-4">
+					<div class="stat-item">
+						<div class="stat-number">8</div>
+						<div class="stat-label">Unidades de Saúde</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Notícias e Blog -->
+	<section id="news" class="news-section py-5">
+		<div class="container">
+			<div class="section-header">
+				<h2>Notícias e Eventos</h2>
+				<p>Fique por dentro das últimas novidades do município</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="news-card">
+						<div class="news-img">
+							<img src="assets/images/blog/b3.jpg" alt="Notícia 1" class="img-fluid">
+						</div>
+						<div class="news-content">
+							<div class="news-meta">
+								<span><i class="far fa-calendar-alt"></i> 15 Jun 2023</span>
+								<span><i class="far fa-eye"></i> 245</span>
+							</div>
+							<h3>Prefeitura inaugura novo centro de saúde no bairro Zango</h3>
+							<p>A nova unidade vai atender mais de 10 mil habitantes da região, com serviços de urgência
+								e consultas especializadas.</p>
+							<a href="#" class="btn btn-primary btn-sm">Ler Mais</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="news-card">
+						<div class="news-img">
+							<img src="assets/images/blog/e7.jpg" alt="Notícia 2" class="img-fluid">
+						</div>
+						<div class="news-content">
+							<div class="news-meta">
+								<span><i class="far fa-calendar-alt"></i> 10 Jun 2023</span>
+								<span><i class="far fa-eye"></i> 189</span>
+							</div>
+							<h3>Município lança programa de reciclagem comunitária</h3>
+							<p>Iniciativa visa conscientizar a população sobre a importância da separação do lixo e
+								oferecer pontos de coleta seletiva.</p>
+							<a href="#" class="btn btn-primary btn-sm">Ler Mais</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 mb-4">
+					<div class="news-card">
+						<div class="news-img">
+							<img src="assets/images/blog/e8.jpg" alt="Notícia 3" class="img-fluid">
+						</div>
+						<div class="news-content">
+							<div class="news-meta">
+								<span><i class="far fa-calendar-alt"></i> 5 Jun 2023</span>
+								<span><i class="far fa-eye"></i> 312</span>
+							</div>
+							<h3>Festival cultural reúne artistas locais no centro da cidade</h3>
+							<p>Evento celebrou a diversidade cultural de belas com apresentações de música, dança e
+								artesanato tradicional.</p>
+							<a href="#" class="btn btn-primary btn-sm">Ler Mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<a href="#" class="btn btn-primary">Ver Todas as Notícias</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contato -->
+	<section id="contact" class="contact-section py-5 bg-white">
+		<div class="container">
+			<div class="section-header">
+				<h2>Contactos</h2>
+				<p>Entre em contacto com a administração municipal</p>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 mb-4">
+					<div class="contact-form">
+						<form id="contactForm">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Seu Nome" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Seu Email" required>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Assunto">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Sua Mensagem" rows="5" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-lg-6 mb-4">
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div class="contact-text">
+								<h3>Endereço</h3>
+								<p>Edifício Administrativo Municipal, Av. da Liberdade, belas, Luanda</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-phone-alt"></i>
+							</div>
+							<div class="contact-text">
+								<h3>Telefone</h3>
+								<p>+244 222 123 456<br>+244 923 456 789 (Emergências)</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="contact-text">
+								<h3>Email</h3>
+								<p>geral@belas.gov.ao<br>ouvidoria@belas.gov.ao</p>
+							</div>
+						</div>
+
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-clock"></i>
+							</div>
+							<div class="contact-text">
+								<h3>Horário de Funcionamento</h3>
+								<p>Segunda a Sexta: 8h00 - 15h00<br>Sábado: 8h00 - 12h00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Mapa -->
+	<section class="map-section">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.23456789!2d13.1234567!3d-8.9876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNTknMTUuNiJTIDEzwrAwNyczNi4xIkU!5e0!3m2!1spt-PT!2sao!4v1234567890123!5m2!1spt-PT!2sao"
+			width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 mb-4">
+					<div class="footer-about">
+						<a href="#" class="footer-logo">belas<span>Gov</span></a>
+						<p>Portal oficial do Município de belas, província de Luanda, Angola. Informações sobre
+							serviços públicos, turismo, cultura e administração municipal.</p>
+						<div class="footer-social">
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-6 mb-4">
+					<div class="footer-links">
+						<h3>Links Rápidos</h3>
+						<ul>
+							<li><a href="#home">Início</a></li>
+							<li><a href="#municipio">O Município</a></li>
+							<li><a href="#services">Serviços</a></li>
+							<li><a href="#tourism">Turismo</a></li>
+							<li><a href="#team">Governo</a></li>
+							<li><a href="#news">Notícias</a></li>
+							<li><a href="#contact">Contactos</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 mb-4">
+					<div class="footer-links">
+						<h3>Serviços</h3>
+						<ul>
+							<li><a href="#">Registo Civil</a></li>
+							<li><a href="#">Saúde Pública</a></li>
+							<li><a href="#">Educação</a></li>
+							<li><a href="#">Obras Públicas</a></li>
+							<li><a href="#">Meio Ambiente</a></li>
+							<li><a href="#">Assistência Social</a></li>
+							<li><a href="#">Todos os Serviços</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 mb-4">
+					<div class="footer-contact">
+						<h3>Contactos</h3>
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div class="contact-info-text">
+								<p>Edifício Administrativo Municipal, Av. da Liberdade, belas</p>
+							</div>
+						</div>
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fas fa-phone-alt"></i>
+							</div>
+							<div class="contact-info-text">
+								<p>+244 222 123 456</p>
+							</div>
+						</div>
+						<div class="contact-info-item">
+							<div class="contact-info-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="contact-info-text">
+								<p>geral@belas.gov.ao</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p>&copy; 2023 Município de belas. Todos os direitos reservados. Desenvolvido pela <a href="#"
+						style="color: var(--vermelho);">Direção de Tecnologias de Informação</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal Serviços -->
+	<div class="modal-overlay" id="registro-civil">
+		<div class="modal-content">
+			<button class="modal-close">&times;</button>
+			<div class="modal-header">
+				<h2>Registo Civil</h2>
+			</div>
+			<div class="modal-body">
+				<p>O serviço de Registo Civil do Município de belas oferece:</p>
+				<ul>
+					<li>Emissão de Bilhete de Identidade</li>
+					<li>Registo de Nascimento</li>
+					<li>Certidão de Casamento</li>
+					<li>Certidão de Óbito</li>
+					<li>Atualização de dados cadastrais</li>
+				</ul>
+				<h4>Documentos Necessários</h4>
+				<p>Para emissão de BI: Cédula pessoal ou certidão de nascimento original, 2 fotos tipo passe,
+					comprovativo de residência.</p>
+				<h4>Horário de Atendimento</h4>
+				<p>Segunda a Sexta: 8h00 - 15h00</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-outline modal-close-btn">Fechar</button>
+				<a href="#" class="btn btn-primary">Download Formulário</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Botão Voltar ao Topo -->
+	<a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+	<!-- JavaScript -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		// Slider Automático
+		let currentSlide = 0;
+		const slides = document.querySelectorAll('.slide');
+		const indicators = document.querySelectorAll('.slide-indicator');
+
+		function showSlide(n) {
+			slides.forEach(slide => slide.classList.remove('active'));
+			indicators.forEach(indicator => indicator.classList.remove('active'));
+
+			currentSlide = (n + slides.length) % slides.length;
+			slides[currentSlide].classList.add('active');
+			indicators[currentSlide].classList.add('active');
+		}
+
+		function nextSlide() {
+			showSlide(currentSlide + 1);
+		}
+
+		// Mudar slide a cada 5 segundos
+		setInterval(nextSlide, 5000);
+
+		// Controle pelos indicadores
+		indicators.forEach((indicator, index) => {
+			indicator.addEventListener('click', () => {
+				showSlide(index);
+			});
+		});
+
+		// Dark Mode Toggle
+		const toggle = document.getElementById('checkbox');
+		toggle.addEventListener('change', () => {
+			document.body.classList.toggle('dark-mode');
+		});
+
+		// Modal
+		const modalTriggers = document.querySelectorAll('.modal-trigger');
+		const modals = document.querySelectorAll('.modal-overlay');
+		const closeButtons = document.querySelectorAll('.modal-close, .modal-close-btn');
+
+		modalTriggers.forEach(trigger => {
+			trigger.addEventListener('click', () => {
+				const modalId = trigger.getAttribute('data-modal');
+				document.getElementById(modalId).classList.add('active');
+				document.body.style.overflow = 'hidden';
+			});
+		});
+
+		closeButtons.forEach(button => {
+			button.addEventListener('click', () => {
+				modals.forEach(modal => modal.classList.remove('active'));
+				document.body.style.overflow = 'auto';
+			});
+		});
+
+		// Fechar modal clicando fora
+		modals.forEach(modal => {
+			modal.addEventListener('click', (e) => {
+				if (e.target === modal) {
+					modal.classList.remove('active');
+					document.body.style.overflow = 'auto';
+				}
+			});
+		});
+
+		// Botão Voltar ao Topo
+		window.addEventListener('scroll', () => {
+			const backToTop = document.getElementById('backToTop');
+			if (window.pageYOffset > 300) {
+				backToTop.classList.add('show');
+			} else {
+				backToTop.classList.remove('show');
+			}
+		});
+	</script>
+</body>
+
+</html>
