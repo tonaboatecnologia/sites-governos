@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="" lang="pt-br">
 
 <head>
 	<!-- meta data -->
@@ -14,11 +14,13 @@
 		rel="stylesheet" />
 
 	<!-- title of site -->
-	<title>Unidos somos como Cristo</title>
+	<title>MunicipalWeb - Modelo padrão dos sites Municipais de Angola</title>
 
 	<!-- For favicon png -->
-	<link rel="shortcut icon" type="image/icon" href="assets/images/ricardo.png" />
+	<link rel="shortcut icon" type="image/icon" href="assets/images/blog/b4.png" />
 
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<!--font-awesome.min.css-->
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
 
@@ -43,6 +45,7 @@
 
 	<!--style.css-->
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
 	<!--card.css-->
 
 	<link rel="stylesheet" href="assets/css/cards.css" />
@@ -56,7 +59,10 @@
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
+
+
 </head>
 
 <body>
@@ -67,7 +73,6 @@
         your experience and security.
       </p>
     <![endif]-->
-
 	<!--header-top start -->
 	<header id="header-top" class="header-top">
 		<ul>
@@ -76,20 +81,13 @@
 					<ul>
 						<li class="select-opt">
 							<select name="language" id="language">
-								<option value="default">EN</option>
-								<option value="Bangla">BN</option>
-								<option value="Arabic">AB</option>
+								<option value="portugues">PT</option>
+								<option value="ingles">EN</option>
+								<option value="frances">FR</option>
 							</select>
 						</li>
 						<li class="select-opt">
-							<select name="currency" id="currency">
-								<option value="usd">USD</option>
-								<option value="euro">Euro</option>
-								<option value="bdt">BDT</option>
-							</select>
-						</li>
-						<li class="select-opt">
-							<a href="#"><span class="lnr lnr-magnifier"></span></a>
+							<a href="#"><i class="fas fa-search"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -97,12 +95,9 @@
 			<li class="head-responsive-right pull-right">
 				<div class="header-top-right">
 					<ul>
-						<li class="header-top-contact">+1 222 777 6565</li>
+						<li class="header-top-contact"><i class="fas fa-phone"></i> +244 222 123 456</li>
 						<li class="header-top-contact">
-							<a href="#">sign in</a>
-						</li>
-						<li class="header-top-contact">
-							<a href="#">register</a>
+							<a href="#"><i class="fas fa-user"></i> Acesso Restrito</a>
 						</li>
 					</ul>
 				</div>
@@ -124,8 +119,7 @@
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 							<i class="fa fa-bars"></i>
 						</button>
-						<a class="navbar-brand" href="index.html"><img width="216" src="assets/images/ricado.png"
-								alt="" /></a>
+						<a class="navbar-brand" href="index.html"><span style="color: red; font-weight: bolder;"><i class="fa fa-home"></i> Municipal</span></a>
 					</div>
 					<!--/.navbar-header-->
 					<!-- End Header Navigation -->
@@ -133,22 +127,14 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-							<li class="scroll active"><a href="#home"><i class="fa fa-star"></i>Início</a></li>
-							<li class="scroll"><a href="#works"><i class="fa fa-database"></i>Programa</a></li>
-							<li class="scroll"><a href="#explore"><i class="fa fa-home"></i>Igrejas</a></li>
-							<li class="scroll"><a href="#reviews"><i class="fa fa-arrows-alt"></i>Liderança</a></li>
-							<li class="scroll"><a href="#blog"><i class="fa fa-bars"></i>Blog & Eventos</a></li>
-							<li class="scroll"><a href="#contact"><i class="fa fa-phone"></i>Contactos</a></li>
-                            <li class="dropdown"><a href="#"><i class="fa fa-bookmark-o"></i>Extras</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="about.html">JUA</a></li>
-                                    <li><a href="services.html">Obreiros</a></li>
-                                    <li><a href="gallery.html">EBI</a></li>
-                                    <li><a href="#">Acão de Graças</a></li>
-                                    <li><a href="#">Educação</a></li>
-                                </ul>
+							<li class="scroll active"><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+							<li class="scroll"><a href="#municipio"><i class="fas fa-landmark"></i> O Município</a></li>
+							<li class="scroll"><a href="#servicos"><i class="fas fa-file-alt"></i> Serviços</a></li>
+							<li class="scroll"><a href="#turismo"><i class="fas fa-camera"></i> Turismo</a></li>
+							<li class="scroll"><a href="#governo"><i class="fas fa-university"></i> Governo</a></li>
+							<li class="scroll"><a href="#noticias"><i class="fas fa-newspaper"></i> Notícias</a></li>
+							<li class="scroll"><a href="#contactos"><i class="fas fa-envelope"></i> Contactos</a></li>
 						</ul>
-                    
 						<!--/.nav -->
 					</div>
 					<!-- /.navbar-collapse -->
@@ -169,35 +155,94 @@
 		<div class="container">
 			<div class="welcome-hero-txt">
 				<h2>
-					"Oh! Quão bom e Quão suave<br />E os Irmãos Vivam em Comunhão."
+					Município de [Nome do Município]<br />Terra de Progresso e Desenvolvimento
 				</h2>
-				<p>Salmos 130:10</p>
+				<p>Província de [Nome da Província], Angola</p>
 			</div>
-			<div class="welcome-hero-serch-box">
-				<div class="welcome-hero-form">
-					<div class="single-welcome-hero-form">
-						<h3>Onde?</h3>
-						<form action="index.html">
-							<input type="text" placeholder="Ex: pesquisar por Catedrais ou igrejas mais próximas" />
+
+			<!-- Novo Formulário de Pesquisa Aprimorado -->
+			<div class="search-panel">
+				<div class="search-tabs">
+					<button class="tab-btn active" data-tab="servicos"><i class="fas fa-file-alt"></i> Serviços
+						Municipais</button>
+					<button class="tab-btn" data-tab="noticias"><i class="fas fa-newspaper"></i> Notícias</button>
+					<button class="tab-btn" data-tab="turismo"><i class="fas fa-camera"></i> Locais Turísticos</button>
+				</div>
+
+				<div class="search-content">
+					<div class="tab-content active" id="servicos-tab">
+						<form class="advanced-search">
+							<div class="search-field">
+								<i class="fas fa-search"></i>
+								<input type="text" placeholder="Ex: Certidão de nascimento, licença de construção..."
+									class="search-input" id="servicos-input">
+								<div class="suggestions-box" id="servicos-suggestions"></div>
+							</div>
+							<div class="filter-options">
+								<select class="filter-select">
+									<option value="">Todos os Departamentos</option>
+									<option value="educacao">Educação</option>
+									<option value="saude">Saúde</option>
+									<option value="urbanismo">Urbanismo</option>
+									<option value="financas">Finanças</option>
+								</select>
+								<button type="submit" class="search-btn">
+									Pesquisar <i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
 						</form>
-						<div class="welcome-hero-form-icon">
-							<i class="flaticon-list-with-dots"></i>
-						</div>
 					</div>
-					<div class="single-welcome-hero-form">
-						<h3>Quem</h3>
-						<form action="index.html">
-							<input type="text" placeholder="Ex: Pastores, Obreiros, e Jovens" />
+
+					<div class="tab-content" id="noticias-tab">
+						<form class="advanced-search">
+							<div class="search-field">
+								<i class="fas fa-search"></i>
+								<input type="text" placeholder="Ex: Últimas notícias sobre infraestruturas..."
+									class="search-input" id="noticias-input">
+								<div class="suggestions-box" id="noticias-suggestions"></div>
+							</div>
+							<div class="filter-options">
+								<select class="filter-select">
+									<option value="">Todos os Temas</option>
+									<option value="obras">Obras Públicas</option>
+									<option value="eventos">Eventos Municipais</option>
+									<option value="avisos">Avisos e Editais</option>
+								</select>
+								<button type="submit" class="search-btn">
+									Pesquisar <i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
 						</form>
-						<div class="welcome-hero-form-icon">
-							<i class="flaticon-gps-fixed-indicator"></i>
-						</div>
+					</div>
+
+					<div class="tab-content" id="turismo-tab">
+						<form class="advanced-search">
+							<div class="search-field">
+								<i class="fas fa-search"></i>
+								<input type="text" placeholder="Ex: Museus, praias, pontos históricos..."
+									class="search-input" id="turismo-input">
+								<div class="suggestions-box" id="turismo-suggestions"></div>
+							</div>
+							<div class="filter-options">
+								<select class="filter-select">
+									<option value="">Todos os Locais</option>
+									<option value="historicos">Patrimônio Histórico</option>
+									<option value="naturais">Atrações Naturais</option>
+									<option value="culturais">Eventos Culturais</option>
+								</select>
+								<button type="submit" class="search-btn">
+									Pesquisar <i class="fas fa-arrow-right"></i>
+								</button>
+							</div>
+						</form>
 					</div>
 				</div>
-				<div class="welcome-hero-serch">
-					<button class="welcome-hero-btn" onclick="window.location.href='#'">
-						procurar <i data-feather="Pesquisar"></i>
-					</button>
+
+				<div class="quick-links">
+					<span>Acesso Rápido:</span>
+					<a href="#"><i class="fas fa-file-pdf"></i> Formulários</a>
+					<a href="#"><i class="fas fa-calendar-alt"></i> Agenda Municipal</a>
+					<a href="#"><i class="fas fa-map-marked-alt"></i> Mapa do Município</a>
 				</div>
 			</div>
 		</div>
@@ -213,7 +258,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg" />
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_pna.jpg" />
 							</div>
 
 							<div class="card-header justify-content-center">
@@ -229,7 +274,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg"
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_sbra.jpeg"
 									alt="logo da Forças Armadas Angolanas" />
 							</div>
 
@@ -246,7 +291,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg"
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_sp.jpeg"
 									alt="logo dos serviços Penitenciários" />
 							</div>
 
@@ -263,7 +308,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg"
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_sic.jpeg"
 									alt="logo dos Serviços de investigação Criminal" />
 							</div>
 
@@ -280,7 +325,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg"
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_sp.jpeg"
 									alt="logo dos serviços dos bombeiros" />
 							</div>
 
@@ -299,7 +344,7 @@
 						<div class="card">
 							<div>
 								<img class="card-img-top img-fluid justify-content-center"
-									style="width: 70px; height: 70px" src="assets/images/jir.jpg"
+									style="width: 70px; height: 70px" src="assets/images/entidades/logo_smies.jpeg"
 									alt="logo dos serviços de migração estrangeira" />
 							</div>
 
@@ -319,166 +364,994 @@
 		</div>
 	</section>
 	<!--entidades start -->
-	<section id="entidades" class="works">
+	<!-- Serviços Municipais start -->
+	<section id="servicos" class="servicos-municipais">
 		<div class="container">
 			<div class="section-header">
-				<h2>Sectores</h2>
+				<h2>Serviços Municipais</h2>
 				<p>
-					Conheça os Setores que constituem a Igreja  
+					Conheça os principais serviços públicos oferecidos pelo município
 				</p>
 			</div>
 			<!--/.section-header-->
-			<div class="works-content">
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img style="width: 70px; height: 70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo da polícia nacional" />
-							</div>
-							<h2>
-								<a href="#">Polícia Nacional<span></span> </a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+
+			<div class="row">
+				<!-- Educação -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #CC092F;">
+							<i class="fas fa-graduation-cap"></i>
+						</div>
+						<h3>Educação</h3>
+						<p>
+							Matrículas escolares, transporte escolar, merenda escolar e programas de alfabetização para
+							crianças e adultos.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-educacao">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img style="width: 70px; height: 70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo da Forças armadas angolanas" />
-							</div>
-							<h2>
-								<a href="#">Forças Armadas Angolanas<span></span> </a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+				</div>
+
+				<!-- Saúde -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #000000;">
+							<i class="fas fa-hospital"></i>
+						</div>
+						<h3>Saúde Municipal</h3>
+						<p>
+							Postos de saúde, vacinação, atendimento primário, campanhas de prevenção e agendamento de
+							consultas.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-saude">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img style="width: 70px; height: 70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo dos serviços penitenciários" />
-							</div>
-							<h2>
-								<a href="#">Serviços Penitenciários<span></span> </a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+				</div>
+
+				<!-- Urbanismo -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #FFCB00;">
+							<i class="fas fa-city"></i>
+						</div>
+						<h3>Urbanismo e Obras</h3>
+						<p>
+							Licenças de construção, fiscalização de obras, planeamento urbano e projetos de
+							infraestrutura.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-urbanismo">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img style="width: 70px; height: 70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo dos serviços de investigação Criminal" />
-							</div>
-							<h2>
-								<a href="#">Serviços de Investigação Criminal<span></span>
-								</a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+				</div>
+
+				<!-- Finanças -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #CC092F;">
+							<i class="fas fa-coins"></i>
+						</div>
+						<h3>Finanças Municipais</h3>
+						<p>
+							Pagamento de impostos municipais, emissão de guias, consulta de débitos e isenções fiscais.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-financas">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img width="70px" class="img-fluid " src="assets/images/jua.png" logo dos serviços de
-									bombeiros e Resgate de Angola">
-							</div>
-							<h2>
-								<a href="#">Serviços de Bombeiros e Resgate<span></span></a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+				</div>
+
+				<!-- Ação Social -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #000000;">
+							<i class="fas fa-hands-helping"></i>
+						</div>
+						<h3>Ação Social</h3>
+						<p>
+							Programas de apoio a famílias carenciadas, idosos, pessoas com deficiência e crianças
+							vulneráveis.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-social">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img width="70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo dos serviços de Emigração Estrangeira" />
-							</div>
-							<h2>
-								<a href="#">Serviços de Migração Estrangeira<span></span> </a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
-							</button>
+				</div>
+
+				<!-- Cultura e Turismo -->
+				<div class="col-md-4 col-sm-6">
+					<div class="servico-card">
+						<div class="servico-icon" style="background-color: #FFCB00;">
+							<i class="fas fa-umbrella-beach"></i>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="single-how-works">
-							<div class="">
-								<img width="70px" class="img-fluid" src="assets/images/jua.png"
-									alt="logo dos serviços de Emigração Estrangeira" />
-							</div>
-							<h2>
-								<a href="#">Polícia de Intervenção Rápida<span></span> </a>
-							</h2>
-							<p>
-								O Sistema Penitenciário Angolano pune criminossos, faz a
-								Atenuação do efeito retributivo da pena, Valoriza a dignidade
-								humana e reabilitativo os detentos
-							</p>
-							<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-								Saber mais
+						<h3>Cultura e Turismo</h3>
+						<p>
+							Eventos culturais, património histórico, promoção turística e apoio a iniciativas culturais
+							locais.
+						</p>
+						<div class="servico-actions">
+							<button class="btn-saber-mais" data-modal="modal-turismo">
+								Saber mais <i class="fas fa-chevron-right"></i>
 							</button>
+							<a href="#" class="btn-download">
+								<i class="fas fa-file-pdf"></i> PDF
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--/.container-->
+
+		<!-- Modal Structure -->
+		<div id="modal-educacao" class="servico-modal">
+			<div class="modal-content">
+				<span class="close-modal">&times;</span>
+				<h3><i class="fas fa-graduation-cap"></i> Educação Municipal</h3>
+				<div class="modal-body">
+					<div class="modal-info">
+						<h4>Serviços Oferecidos:</h4>
+						<ul>
+							<li>Matrículas para o ano letivo</li>
+							<li>Programa de merenda escolar</li>
+							<li>Transporte escolar gratuito</li>
+							<li>Bibliotecas municipais</li>
+							<li>Cursos de alfabetização para adultos</li>
+						</ul>
+
+						<h4>Horário de Atendimento:</h4>
+						<p>Segunda a Sexta: 8:00 - 15:00</p>
+
+						<h4>Documentos Necessários:</h4>
+						<ul>
+							<li>BI do encarregado de educação</li>
+							<li>Certidão de nascimento da criança</li>
+							<li>Comprovativo de residência</li>
+						</ul>
+					</div>
+					<div class="modal-contact">
+						<h4>Contactos:</h4>
+						<p><i class="fas fa-phone"></i> +244 222 123 456</p>
+						<p><i class="fas fa-envelope"></i> educacao@municipio.gov.ao</p>
+						<p><i class="fas fa-map-marker-alt"></i> Edifício da Educação Municipal, Rua da Independência
+						</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#" class="btn-download">
+						<i class="fas fa-file-pdf"></i> Baixar Guia Completo (PDF)
+					</a>
+					<a href="#" class="btn-online">
+						<i class="fas fa-laptop"></i> Acesso ao Serviço Online
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Outros modais teriam estrutura similar -->
 	</section>
+
+	<!-- Serviços Municipais end -->
 	<!--/.works-->
 
 	<!--entidades end -->
+	<!-- Municipio Section -->
+	<section id="municipio" class="municipio-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>O Nosso Município</h2>
+				<p>Conheça mais sobre município</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-lg-6">
+					<div class="card">
+						<div class="card-body">
+							<h3><i class="fas fa-landmark"></i> História e Geografia</h3>
+							<p>município é um município angolano localizado na província de Luanda. Com uma população
+								diversificada, o município tem experimentado um crescimento significativo nos últimos
+								anos,
+								tornando-se um importante centro urbano.</p>
+
+							<h3 class="mt-4"><i class="fas fa-chart-bar"></i> Dados Demográficos</h3>
+							<ul class="data-list">
+								<li>
+									<i class="fas fa-users"></i>
+									<strong>População:</strong> Aproximadamente 500.000 habitantes
+								</li>
+								<li>
+									<i class="fas fa-map-marked-alt"></i>
+									<strong>Área:</strong> 120 km²
+								</li>
+								<li>
+									<i class="fas fa-calendar-alt"></i>
+									<strong>Ano de Fundação:</strong> 1985
+								</li>
+							</ul>
+
+							<div class="mt-4">
+								<button class="btn btn-outline mr-2">
+									<i class="fas fa-book"></i> História Completa
+								</button>
+								<button class="btn btn-primary" id="openGallery">
+									<i class="fas fa-camera"></i> Galeria de Fotos
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-lg-6">
+					<div class="card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/b4.png"
+								alt="Panorama de município" class="card-img">
+						</div>
+						<div class="card-body">
+							<p><i class="fas fa-info-circle"></i> Vista panorâmica do município de município</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Entidades Governamentais -->
+			<div class="mt-5 pt-5">
+				<div class="section-header">
+					<h3>Entidades Municipais</h3>
+				</div>
+
+				<div class="row">
+					<!-- Entidade 1 -->
+					<div class="col col-md-4 col-sm-6">
+						<div class="card">
+							<div class="card-img-container">
+								<img src="assets/images/blog/images (1).jpg"
+									alt="Prefeitura de município" class="card-img">
+							</div>
+							<div class="card-body">
+								<h4><i class="fas fa-university"></i> Prefeitura Municipal</h4>
+								<p class="mb-3">Órgão máximo de administração local, responsável pela gestão do
+									município.
+								</p>
+								<button class="btn btn-outline btn-sm modal-trigger" data-modal="modal-prefeitura">
+									<i class="fas fa-info-circle"></i> Saiba mais
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Entidade 2 -->
+					<div class="col col-md-4 col-sm-6">
+						<div class="card">
+							<div class="card-img-container">
+								<img src="assets/images/blog/images (2).jpg" alt="Saúde município"
+									class="card-img">
+							</div>
+							<div class="card-body">
+								<h4><i class="fas fa-hospital"></i> Direção Municipal da Saúde</h4>
+								<p class="mb-3">Responsável pela gestão dos serviços de saúde pública no município.</p>
+								<button class="btn btn-outline btn-sm modal-trigger" data-modal="modal-saude">
+									<i class="fas fa-info-circle"></i> Saiba mais
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Entidade 3 -->
+					<div class="col col-md-4 col-sm-6">
+						<div class="card">
+							<div class="card-img-container">
+								<img src="assets/images/blog/images (5).jpg" alt="Educação município"
+									class="card-img">
+							</div>
+							<div class="card-body">
+								<h4><i class="fas fa-school"></i> Direção Municipal da Educação</h4>
+								<p class="mb-3">Coordena as políticas educacionais e a rede escolar municipal.</p>
+								<button class="btn btn-outline btn-sm modal-trigger" data-modal="modal-educacao">
+									<i class="fas fa-info-circle"></i> Saiba mais
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Equipe Section -->
+	<section id="equipe" class="equipe-section bg-light">
+		<div class="container">
+			<div class="section-header">
+				<h2>Nossa Equipe</h2>
+				<p>Conheça os membros do corpo governamental do município</p>
+			</div>
+
+			<div class="row">
+				<!-- Membro 1 -->
+				<div class="col col-md-4 col-sm-6">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/images.jpg" alt="Prefeito"
+								class="card-img">
+							<div class="team-social">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#" class="modal-trigger" data-modal="modal-prefeito"><i
+										class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Eng. João Manuel</h3>
+							<p class="team-position">Prefeito Municipal</p>
+							<p class="bio">Responsável pela administração geral do município e implementação de
+								políticas
+								públicas.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Membro 2 -->
+				<div class="col col-md-4 col-sm-6">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/image.jpg" alt="Diretor Saúde"
+								class="card-img">
+							<div class="team-social">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#" class="modal-trigger" data-modal="modal-saude-dir"><i
+										class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Dra. Maria Fernandes</h3>
+							<p class="team-position">Diretora de Saúde</p>
+							<p class="bio">Coordena os serviços de saúde pública e programas de prevenção no município.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Membro 3 -->
+				<div class="col col-md-4 col-sm-6">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/Cara-dura-em-video.jpg" alt="Diretor Educação"
+								class="card-img">
+							<div class="team-social">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#" class="modal-trigger" data-modal="modal-educacao-dir"><i
+										class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+						<div class="team-info">
+							<h3>Prof. António Kiala</h3>
+							<p class="team-position">Diretor de Educação</p>
+							<p class="bio">Responsável pela rede escolar municipal e programas educacionais.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-5">
+				<button class="btn btn-primary">
+					<i class="fas fa-users"></i> Conheça Toda a Equipe
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Bairros Section -->
+	<section id="bairros" class="bairros-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Bairros do Município</h2>
+				<p>Conheça os principais bairros de município</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-lg-6">
+					<div class="table-responsive">
+						<table>
+							<thead>
+								<tr>
+									<th><i class="fas fa-map-pin"></i> Bairro</th>
+									<th><i class="fas fa-users"></i> População</th>
+									<th><i class="fas fa-home"></i> Características</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>município 1</td>
+									<td>~120.000</td>
+									<td>Zona residencial com comércio local</td>
+								</tr>
+								<tr>
+									<td>município 2</td>
+									<td>~90.000</td>
+									<td>Área em desenvolvimento</td>
+								</tr>
+								<tr>
+									<td>município 3</td>
+									<td>~80.000</td>
+									<td>Zona mista residencial/comercial</td>
+								</tr>
+								<tr>
+									<td>Zango 0</td>
+									<td>~60.000</td>
+									<td>Área de expansão urbana</td>
+								</tr>
+								<tr>
+									<td>Zango 1</td>
+									<td>~75.000</td>
+									<td>Zona residencial planejada</td>
+								</tr>
+								<tr>
+									<td>Zango 2</td>
+									<td>~70.000</td>
+									<td>Área com grande potencial</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="col col-lg-6">
+					<div class="card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/b4.png"
+								alt="Mapa dos Bairros de município" class="card-img">
+						</div>
+						<div class="card-body text-center">
+							<button class="btn btn-primary" id="openMapModal">
+								<i class="fas fa-search-plus"></i> Ver Mapa Interativo
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<button class="btn btn-outline mr-2">
+					<i class="fas fa-download"></i> Dados Demográficos (PDF)
+				</button>
+				<button class="btn btn-primary">
+					<i class="fas fa-book"></i> Histórico dos Bairros
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modals -->
+	<!-- Modal Prefeitura -->
+	<div id="modal-prefeitura" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<h3><i class="fas fa-university"></i> Prefeitura Municipal</h3>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col col-lg-8">
+						<h4>Serviços Oferecidos:</h4>
+						<ul>
+							<li>Atendimento ao cidadão</li>
+							<li>Emissão de documentos municipais</li>
+							<li>Licenciamento de atividades comerciais</li>
+							<li>Gestão de projetos municipais</li>
+							<li>Coordenação das secretarias municipais</li>
+						</ul>
+
+						<h4 class="mt-4">Horário de Atendimento:</h4>
+						<p>Segunda a Sexta: 8:00 - 15:00</p>
+
+						<h4>Localização:</h4>
+						<p>Edifício da Prefeitura Municipal, Avenida Principal, município</p>
+					</div>
+					<div class="col col-lg-4">
+						<div class="card">
+							<div class="card-img-container">
+								<img src="https://via.placeholder.com/400x300?text=Prefeitura" alt="Prefeitura"
+									class="card-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-outline">
+					<i class="fas fa-download"></i> Baixar Guia de Serviços
+				</button>
+				<button class="btn btn-primary">
+					<i class="fas fa-globe"></i> Visitar Site Oficial
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Saúde -->
+	<div id="modal-saude" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<h3><i class="fas fa-hospital"></i> Direção Municipal da Saúde</h3>
+			<div class="modal-body">
+				<!-- Conteúdo similar ao modal da prefeitura -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Educação -->
+	<div id="modal-educacao" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<h3><i class="fas fa-school"></i> Direção Municipal da Educação</h3>
+			<div class="modal-body">
+				<!-- Conteúdo similar ao modal da prefeitura -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Prefeito -->
+	<div id="modal-prefeito" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<div class="modal-body">
+				<div class="row align-items-center">
+					<div class="col col-md-4">
+						<div class="card">
+							<div class="card-img-container">
+								<img src="https://via.placeholder.com/400x500?text=Prefeito" alt="Prefeito"
+									class="card-img">
+							</div>
+						</div>
+					</div>
+					<div class="col col-md-8">
+						<h3>Eng. João Manuel</h3>
+						<p class="team-position">Prefeito Municipal</p>
+
+						<h4 class="mt-4">Biografia</h4>
+						<p>Engenheiro civil formado pela Universidade Agostinho Neto, com especialização em Gestão
+							Pública.
+							Atua na administração municipal desde 2010, assumindo a prefeitura em 2018.</p>
+
+						<h4 class="mt-4">Contactos</h4>
+						<p><i class="fas fa-envelope"></i> prefeito@município.gov.ao</p>
+						<p><i class="fas fa-phone"></i> +244 222 123 456</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Mapa Interativo -->
+	<div id="modal-mapa" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<h3><i class="fas fa-map-marked-alt"></i> Mapa Interativo dos Bairros</h3>
+			<div class="modal-body">
+				<div
+					style="height: 500px; background: #eee; display: flex; align-items: center; justify-content: center;">
+					<p>Mapa interativo dos bairros de município seria exibido aqui</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary">
+					<i class="fas fa-download"></i> Baixar Mapa
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal Galeria -->
+	<div id="modal-galeria" class="modal">
+		<div class="modal-content">
+			<span class="close-modal">&times;</span>
+			<h3><i class="fas fa-camera"></i> Galeria de Fotos</h3>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col col-md-4 col-sm-6">
+						<img src="https://via.placeholder.com/400x300?text=Foto+1" alt="município"
+							class="img-thumbnail mb-3">
+					</div>
+					<div class="col col-md-4 col-sm-6">
+						<img src="https://via.placeholder.com/400x300?text=Foto+2" alt="município"
+							class="img-thumbnail mb-3">
+					</div>
+					<div class="col col-md-4 col-sm-6">
+						<img src="https://via.placeholder.com/400x300?text=Foto+3" alt="município"
+							class="img-thumbnail mb-3">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Works Section - Serviços Municipais -->
+	<section id="works" class="works-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Serviços Municipais</h2>
+				<p>Conheça os principais serviços oferecidos pelo município de Belas</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-file-alt"></i>
+						</div>
+						<h3>Atendimento ao Cidadão</h3>
+						<p>Serviços de emissão de documentos, licenças e atendimento personalizado.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-road"></i>
+						</div>
+						<h3>Infraestrutura Urbana</h3>
+						<p>Manutenção de vias públicas, iluminação e obras de urbanização.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-tree"></i>
+						</div>
+						<h3>Meio Ambiente</h3>
+						<p>Gestão de resíduos, arborização urbana e educação ambiental.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-school"></i>
+						</div>
+						<h3>Educação</h3>
+						<p>Gestão das escolas municipais e programas educacionais.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-hospital"></i>
+						</div>
+						<h3>Saúde Pública</h3>
+						<p>Unidades de saúde, programas preventivos e atendimento básico.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card service-card">
+						<div class="service-icon">
+							<i class="fas fa-landmark"></i>
+						</div>
+						<h3>Finanças Municipais</h3>
+						<p>Pagamento de impostos, taxas e gestão financeira do município.</p>
+						<button class="btn btn-outline">Saiba Mais</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Explore Section - Turismo e Cultura -->
+	<section id="explore" class="explore-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Turismo e Cultura</h2>
+				<p>Descubra os principais pontos turísticos e eventos culturais de Belas</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-4">
+					<div class="card tour-card">
+						<div class="card-img-container">
+							<img src="assets/images/explore/images (10).jpg" alt="Parque Natural"
+								class="card-img">
+							<span class="tour-badge">Destaque</span>
+							<div class="tour-actions">
+								<a href="#" class="tour-action-btn"><i class="fas fa-map-marker-alt"></i></a>
+								<a href="#" class="tour-action-btn"><i class="fas fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="tour-info">
+							<h3>Parque Natural de Belas</h3>
+							<div class="tour-meta">
+								<span class="tour-rating"><i class="fas fa-star"></i> 4.8 (124)</span>
+								<span><i class="fas fa-calendar-alt"></i> Aberto todo dia</span>
+							</div>
+							<p class="tour-description">Área de preservação ambiental com trilhas e mirantes naturais.
+							</p>
+							<button class="btn btn-primary">Ver Detalhes</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card tour-card">
+						<div class="card-img-container">
+							<img src="assets/images/explore/images (8).jpg" alt="Museu Municipal"
+								class="card-img">
+							<div class="tour-actions">
+								<a href="#" class="tour-action-btn"><i class="fas fa-map-marker-alt"></i></a>
+								<a href="#" class="tour-action-btn"><i class="fas fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="tour-info">
+							<h3>Museu Municipal</h3>
+							<div class="tour-meta">
+								<span class="tour-rating"><i class="fas fa-star"></i> 4.5 (89)</span>
+								<span><i class="fas fa-calendar-alt"></i> Ter-Sab: 9h-17h</span>
+							</div>
+							<p class="tour-description">Acervo histórico e cultural da região de Belas.</p>
+							<button class="btn btn-primary">Ver Detalhes</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card tour-card">
+						<div class="card-img-container">
+							<img src="assets/images/explore/images (7).jpg"
+								alt="Festival Cultural" class="card-img">
+							<span class="tour-badge">Evento</span>
+							<div class="tour-actions">
+								<a href="#" class="tour-action-btn"><i class="fas fa-map-marker-alt"></i></a>
+								<a href="#" class="tour-action-btn"><i class="fas fa-share-alt"></i></a>
+							</div>
+						</div>
+						<div class="tour-info">
+							<h3>Festival Cultural de Belas</h3>
+							<div class="tour-meta">
+								<span><i class="fas fa-calendar-alt"></i> 15-20 de Novembro</span>
+							</div>
+							<p class="tour-description">Evento anual que celebra a cultura e tradições locais.</p>
+							<button class="btn btn-primary">Ver Programação</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Reviews Section - Membros do Governo -->
+	<section id="reviews" class="reviews-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Corpo Governamental</h2>
+				<p>Conheça os membros da administração municipal de Belas</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-4">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/images (15).jpg" alt="Prefeito"
+								class="card-img">
+						</div>
+						<div class="card-body">
+							<h3>Eng. João Baptista</h3>
+							<p class="team-position">Prefeito Municipal</p>
+							<span class="team-department">Administração Geral</span>
+							<p>Responsável pela gestão geral do município e implementação de políticas públicas.</p>
+							<div class="team-contact">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#"><i class="fas fa-phone"></i></a>
+								<a href="#"><i class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/images (2).jpg"
+								alt="Secretária de Saúde" class="card-img">
+						</div>
+						<div class="card-body">
+							<h3>Dra. Maria Fernandes</h3>
+							<p class="team-position">Secretária de Saúde</p>
+							<span class="team-department">Saúde Pública</span>
+							<p>Coordena a rede municipal de saúde e programas de prevenção.</p>
+							<div class="team-contact">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#"><i class="fas fa-phone"></i></a>
+								<a href="#"><i class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card team-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/images (1).jpg"
+								alt="Secretário de Educação" class="card-img">
+						</div>
+						<div class="card-body">
+							<h3>Prof. António Kiala</h3>
+							<p class="team-position">Secretário de Educação</p>
+							<span class="team-department">Educação</span>
+							<p>Responsável pela rede escolar municipal e programas educacionais.</p>
+							<div class="team-contact">
+								<a href="#"><i class="fas fa-envelope"></i></a>
+								<a href="#"><i class="fas fa-phone"></i></a>
+								<a href="#"><i class="fas fa-info-circle"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center mt-4">
+				<button class="btn btn-primary">
+					<i class="fas fa-users"></i> Ver Todos os Membros
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- statistics strat -->
+	<section id="statistics" class="statistics">
+		<div class="container">
+			<div class="statistics-counter">
+				<div class="col-md-3 col-sm-6">
+					<div class="single-ststistics-box">
+						<div class="statistics-content">
+							<div class="counter">90</div>
+							<span>K+</span>
+						</div>
+						<!--/.statistics-content-->
+						<h3>Doações
+						</h3>
+					</div>
+					<!--/.single-ststistics-box-->
+				</div>
+				<!--/.col-->
+				<div class="col-md-3 col-sm-6">
+					<div class="single-ststistics-box">
+						<div class="statistics-content">
+							<div class="counter">40</div>
+							<span>k+</span>
+						</div>
+						<!--/.statistics-content-->
+						<h3>Hospitais</h3>
+					</div>
+					<!--/.single-ststistics-box-->
+				</div>
+				<!--/.col-->
+				<div class="col-md-3 col-sm-6">
+					<div class="single-ststistics-box">
+						<div class="statistics-content">
+							<div class="counter">65</div>
+							<span>k+</span>
+						</div>
+						<!--/.statistics-content-->
+						<h3>Escolas</h3>
+					</div>
+					<!--/.single-ststistics-box-->
+				</div>
+				<!--/.col-->
+				<div class="col-md-3 col-sm-6">
+					<div class="single-ststistics-box">
+						<div class="statistics-content">
+							<div class="counter">50</div>
+							<span>k+</span>
+						</div>
+						<!--/.statistics-content-->
+						<h3>Postos Policías</h3>
+					</div>
+					<!--/.single-ststistics-box-->
+				</div>
+				<!--/.col-->
+			</div>
+			<!--/.statistics-counter-->
+		</div>
+		<!--/.container-->
+	</section>
+	<!--/.counter-->
+	<!-- statistics end -->
+	<!-- Blog Section - Notícias -->
+	<section id="blog" class="blog-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Notícias</h2>
+				<p>Fique por dentro das últimas novidades do município</p>
+			</div>
+
+			<div class="row">
+				<div class="col col-md-4">
+					<div class="card news-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/Escola-42-e-inaugurada-em-Luanda.webp" alt="Inauguração"
+								class="card-img">
+						</div>
+						<div class="card-body">
+							<div class="news-date"><i class="far fa-calendar-alt"></i> 15 Junho 2023</div>
+							<h3 class="news-title">Inauguração do Novo Centro Cultural</h3>
+							<p class="news-excerpt">O município inaugurou ontem o novo centro cultural com capacidade
+								para
+								500 pessoas.</p>
+							<button class="btn btn-outline">Ler Mais</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card news-card">
+						<div class="card-img-container">
+							<img src="assets/images/blog/6ff1d32e-df58-4f40-a4fb-351f11a905ca.jpeg" alt="Obra Pública"
+								class="card-img">
+						</div>
+						<div class="card-body">
+							<div class="news-date"><i class="far fa-calendar-alt"></i> 5 Junho 2023</div>
+							<h3 class="news-title">Início das Obras na Avenida Principal</h3>
+							<p class="news-excerpt">Começaram esta semana as obras de requalificação da avenida central
+								de
+								Belas.</p>
+							<button class="btn btn-outline">Ler Mais</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-md-4">
+					<div class="card news-card">
+						<div class="card-img-container">
+							<img src="assets/images/explore/e3.jpg" alt="Evento Cultural"
+								class="card-img">
+						</div>
+						<div class="card-body">
+							<div class="news-date"><i class="far fa-calendar-alt"></i> 1 Junho 2023</div>
+							<h3 class="news-title">Festival de Música Tradicional</h3>
+							<p class="news-excerpt">Programação anunciada para o festival que acontecerá no próximo mês.
+							</p>
+							<button class="btn btn-outline">Ler Mais</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<!--works start -->
 	<section id="works" class="works">
 		<div class="container">
 			<div class="section-header">
-				<h2>Programa de Reuniões</h2>
-				<p>Entenda e Visualiza os dias de Reunião e o próposito de cada Dia</p>
+				<h2>Departamentos Municípais e seus locais e horários de funcionamentos</h2>
+				<p>Visulize os departamentos municipais que atuam na cidade de [nome do município]</p>
 			</div>
 			<!--/.section-header-->
 			<div class="works-content">
@@ -597,8 +1470,8 @@
 	<section id="explore" class="explore">
 		<div class="container">
 			<div class="section-header">
-				<h2>Igrejas</h2>
-				<p>Pesquise e visualize igrejas mais Próximos da sua Região</p>
+				<h2>Blogs & Eventos</h2>
+				<p>Comentários de nossos visitantes e eventos municípias</p>
 			</div>
 			<!--/.section-header-->
 			<div class="explore-content">
@@ -1042,8 +1915,8 @@
 	<!--reviews start -->
 	<section id="reviews" class="reviews">
 		<div class="section-header">
-			<h2>Líderes da Igreja</h2>
-			<p>Visualize e pesquise os principais Líderes e homens de Deus dos diferentes setores e cargos</p>
+			<h2>Membros Setorias da administração Municipal</h2>
+			<p>Visualize o perfil dos Responsavéis pela liderança democrática do município</p>
 		</div>
 		<!--/.section-header-->
 		<div class="reviews-content">
@@ -1329,7 +2202,7 @@
 							<span>K+</span>
 						</div>
 						<!--/.statistics-content-->
-						<h3>Doações
+						<h3>Total de Projectos Realizados
 						</h3>
 					</div>
 					<!--/.single-ststistics-box-->
@@ -1342,7 +2215,7 @@
 							<span>k+</span>
 						</div>
 						<!--/.statistics-content-->
-						<h3>Candidatos</h3>
+						<h3>Departaments e sectores</h3>
 					</div>
 					<!--/.single-ststistics-box-->
 				</div>
@@ -1354,7 +2227,7 @@
 							<span>k+</span>
 						</div>
 						<!--/.statistics-content-->
-						<h3>Obreiros</h3>
+						<h3>Habitantes</h3>
 					</div>
 					<!--/.single-ststistics-box-->
 				</div>
@@ -1366,7 +2239,7 @@
 							<span>k+</span>
 						</div>
 						<!--/.statistics-content-->
-						<h3>Igrejas</h3>
+						<h3>Infraestrutura</h3>
 					</div>
 					<!--/.single-ststistics-box-->
 				</div>
@@ -1384,7 +2257,8 @@
 		<div class="container">
 			<div class="section-header">
 				<h2>Blog & Eventos</h2>
-				<p>Visualize, pesquise e interaja dos atuais, passados e futuros novidades dos Eventos através do blog</p>
+				<p>Visualize, pesquise e interaja dos atuais, passados e futuros novidades dos Eventos através do blog
+				</p>
 			</div>
 			<!--/.section-header-->
 			<div class="blog-content">
@@ -1453,95 +2327,150 @@
 	</section>
 	<!--/.blog-->
 	<!--blog end -->
-
-	<!--subscription strat -->
-	<section id="contact" class="subscription">
+	<!-- Contact Section -->
+	<section id="contact" class="contact-section">
 		<div class="container">
-			<div class="subscribe-title text-center">
-				<h2>Gostaria de Receber algumas informação ou oração via whatsaap com um pastor?</h2>
-				<p>
-					Então deixe sua mensagem via email no formulário de contacto abaixo. e receberá as recomendações!
-				</p>
+			<div class="section-header">
+				<h2>Contactos</h2>
+				<p>Entre em contato com a administração municipal</p>
 			</div>
+	
 			<div class="row">
-				<div class="col-sm-12">
-					<div class="subscription-input-group">
-						<form action="#">
-							<input type="email" class="subscription-input-form" placeholder="Enter your email here" />
-                            
-							<button class="appsLand-btn subscribe-btn" onclick="window.location.href='#'">
-								Enviar Mensagem
-							</button>
+				<div class="col col-md-6">
+					<div class="contact-form">
+						<form>
+							<div class="form-group">
+								<label for="nome" class="form-label">Nome Completo</label>
+								<input type="text" id="nome" class="form-control" required>
+							</div>
+	
+							<div class="form-group">
+								<label for="email" class="form-label">Email</label>
+								<input type="email" id="email" class="form-control" required>
+							</div>
+	
+							<div class="form-group">
+								<label for="telefone" class="form-label">Telefone</label>
+								<input type="tel" id="telefone" class="form-control">
+							</div>
+	
+							<div class="form-group">
+								<label for="assunto" class="form-label">Assunto</label>
+								<select id="assunto" class="form-control" required>
+									<option value="">Selecione um assunto</option>
+									<option value="informacao">Informação Geral</option>
+									<option value="reclamacao">Reclamação</option>
+									<option value="sugestao">Sugestão</option>
+									<option value="elogio">Elogio</option>
+									<option value="outro">Outro</option>
+								</select>
+							</div>
+	
+							<div class="form-group">
+								<label for="mensagem" class="form-label">Mensagem</label>
+								<textarea id="mensagem" class="form-control" required></textarea>
+							</div>
+	
+							<button type="submit" class="btn btn-primary">Enviar Mensagem</button>
 						</form>
 					</div>
 				</div>
+	
+				<div class="col col-md-6">
+					<div class="contact-info">
+						<h3><i class="fas fa-map-marker-alt"></i> Localização</h3>
+						<p>Edifício Administrativo Municipal<br>
+							Avenida da Independência, Belas<br>
+							Luanda, Angola</p>
+	
+						<h3><i class="fas fa-clock"></i> Horário de Atendimento</h3>
+						<p>Segunda a Sexta: 8h00 - 15h00</p>
+	
+						<h3><i class="fas fa-phone"></i> Contactos</h3>
+						<p>Telefone: +244 222 123 456<br>
+							Email: geral@belas.gov.ao</p>
+	
+						<div class="footer-social">
+							<h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+							<a href="#"><i class="fab fa-facebook-f"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-instagram"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="map-container">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.234258423763!2d13.292158315326848!3d-8.198252283987316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3e9e0e7370d%3A0x1a3a3a3a3a3a3a3a!2sBelas%2C%20Luanda%2C%20Angola!5e0!3m2!1spt-PT!2spt!4v1620000000000!5m2!1spt-PT!2spt"
+					width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 	</section>
-	<!--/subscription-->
-	<!--subscription end -->
-
-	<!--footer start-->
+	
+	<!-- Footer -->
 	<footer id="footer" class="footer">
 		<div class="container">
-			<div class="footer-menu">
-				<div class="row">
-					<div class="col-sm-3">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html">list<span>race</span></a>
-						</div>
-						<!--/.navbar-header-->
+			<div class="row">
+				<div class="col col-md-4">
+					<a href="#" class="footer-logo">Belas<span>Município</span></a>
+					<p class="footer-about">O município de Belas, localizado na província de Luanda, é conhecido por seu
+						desenvolvimento urbano e qualidade de vida.</p>
+					<div class="footer-social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
 					</div>
-					<div class="col-sm-9">
-						<ul class="footer-menu-item">
-							<li class="scroll active"><a href="#home"><i class="fa fa-house"></i>Início</a></li>
-							<li class="scroll"><a href="#works"><i class="fa fa-database"></i>Programa</a></li>
-							<li class="scroll"><a href="#explore"><i class="fa fa-home"></i>Igrejas</a></li>
-							<li class="scroll"><a href="#reviews"><i class="fa fa-arrows-alt"></i>Liderança</a></li>
-							<li class="scroll"><a href="#blog"><i class="fa fa-bars"></i>Blog & Eventos</a></li>
-							<li class="scroll"><a href="#contact"><i class="fa fa-phone"></i>Contactos</a></li>
-                            
+				</div>
+	
+				<div class="col col-md-2">
+					<div class="footer-links">
+						<h3>Links Rápidos</h3>
+						<ul>
+							<li><a href="#works">Serviços</a></li>
+							<li><a href="#explore">Turismo</a></li>
+							<li><a href="#reviews">Governo</a></li>
+							<li><a href="#blog">Notícias</a></li>
+							<li><a href="#contact">Contactos</a></li>
 						</ul>
-						<!--/.nav -->
+					</div>
+				</div>
+	
+				<div class="col col-md-3">
+					<div class="footer-links">
+						<h3>Serviços</h3>
+						<ul>
+							<li><a href="#">Documentos</a></li>
+							<li><a href="#">Licenças</a></li>
+							<li><a href="#">Obras Públicas</a></li>
+							<li><a href="#">Educação</a></li>
+							<li><a href="#">Saúde</a></li>
+						</ul>
+					</div>
+				</div>
+	
+				<div class="col col-md-3">
+					<div class="footer-contact">
+						<h3>Contactos</h3>
+						<p><i class="fas fa-map-marker-alt"></i> Av. da Independência, Belas</p>
+						<p><i class="fas fa-phone"></i> +244 222 123 456</p>
+						<p><i class="fas fa-envelope"></i> geral@belas.gov.ao</p>
+						<p><i class="fas fa-clock"></i> Seg-Sex: 8h00-15h00</p>
 					</div>
 				</div>
 			</div>
-			<div class="hm-footer-copyright">
-				<div class="row">
-					<div class="col-sm-5">
-						<p>
-							&copy;copyright. designed and developed by
-							<a href="https://www.themesine.com/">themesine</a>
-						</p>
-						<!--/p-->
-					</div>
-					<div class="col-sm-7">
-						<div class="footer-social">
-							<span><i class="fa fa-phone"> +1 (222) 777 8888</i></span>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/.hm-footer-copyright-->
-		</div>
-		<!--/.container-->
-
-		<div id="scroll-Top">
-			<div class="return-to-top">
-				<i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
-					data-original-title="Back to Top" aria-hidden="true"></i>
+	
+			<div class="footer-bottom">
+				<p>&copy; 2023 Município de Belas. Todos os direitos reservados.</p>
 			</div>
 		</div>
-		<!--/.scroll-Top-->
 	</footer>
-	<!--/.footer-->
-	<!--footer end-->
 
 	<!-- Include all js compiled plugins (below), or include individual files as needed -->
+	<!-- Font Awesome JS (opcional para alguns recursos) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
 	<script src="assets/js/jquery.js"></script>
 
@@ -1568,6 +2497,215 @@
 
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
+	<script>
+		// Script para funcionalidade das abas
+		document.addEventListener('DOMContentLoaded', function () {
+			const tabBtns = document.querySelectorAll('.tab-btn');
+			const tabContents = document.querySelectorAll('.tab-content');
+
+			tabBtns.forEach(btn => {
+				btn.addEventListener('click', function () {
+					const tabId = this.getAttribute('data-tab');
+
+					// Remove active class from all buttons and contents
+					tabBtns.forEach(b => b.classList.remove('active'));
+					tabContents.forEach(c => c.classList.remove('active'));
+
+					// Add active class to clicked button and corresponding content
+					this.classList.add('active');
+					document.getElementById(tabId + '-tab').classList.add('active');
+				});
+			});
+		})
+			// Simulação de sugestões de pesquisa (em uma implementação real, isso viria de um backend)
+			const searchInputs = document.querySelectorAll('.search-input');
+			searchInputs.forEach(input => {
+				input.addEventListener('input', function () {
+					const suggestionsBox = this.nextElementSibling;
+					if (this.value.length > 2) {
+						// Simular sugestões (substituir por chamada AJAX na implementação real)
+						const fakeSuggestions = [
+							this.value + " 2023",
+							this.value + " formulário",
+							"Como obter " + this.value,
+							"Requisitos para " + this.value
+						];
+
+						suggestionsBox.innerHTML = '';
+						fakeSuggestions.forEach(suggestion => {
+							const div = document.createElement('div');
+							div.textContent = suggestion;
+							div.addEventListener('click', function () {
+								input.value = this.textContent;
+								suggestionsBox.classList.remove('show');
+							});
+							suggestionsBox.appendChild(div);
+						});
+
+						suggestionsBox.classList.add('show');
+					} else {
+						suggestionsBox.classList.remove('show');
+					}
+				});
+
+				// Esconder sugestões quando clicar fora
+				document.addEventListener('click', function (e) {
+					if (e.target !== input) {
+						input.nextElementSibling.classList.remove('show');
+					}
+				});
+			});
+			// Script para os modais
+			document.addEventListener('DOMContentLoaded', function () {
+				// Abrir modal
+				const buttons = document.querySelectorAll('.btn-saber-mais');
+				buttons.forEach(button => {
+					button.addEventListener('click', function () {
+						const modalId = this.getAttribute('data-modal');
+						const modal = document.getElementById(modalId);
+						modal.style.display = "block";
+					});
+				});
+
+				// Fechar modal
+				const closeButtons = document.querySelectorAll('.close-modal');
+				closeButtons.forEach(button => {
+					button.addEventListener('click', function () {
+						this.closest('.servico-modal').style.display = "none";
+					});
+				});
+
+				// Fechar ao clicar fora
+				window.addEventListener('click', function (event) {
+					if (event.target.classList.contains('servico-modal')) {
+						event.target.style.display = "none";
+					}
+				});
+			});
+
+			// Script para interatividade
+			document.addEventListener('DOMContentLoaded', function () {
+				// Efeito hover nos cards
+				const cards = document.querySelectorAll('.entidade-card, .equipe-card');
+				cards.forEach(card => {
+					card.addEventListener('mouseenter', function () {
+						this.style.transform = 'translateY(-5px)';
+						this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+					});
+
+					card.addEventListener('mouseleave', function () {
+						this.style.transform = '';
+						this.style.boxShadow = '';
+					});
+				});
+
+				// Botão do mapa interativo (simulação)
+				const mapBtn = document.querySelector('.map-interactive-btn');
+				if (mapBtn) {
+					mapBtn.addEventListener('click', function (e) {
+						e.preventDefault();
+						alert('Mapa interativo será aberto em uma nova janela');
+						// Na implementação real, abriria um modal ou nova janela com mapa interativo
+					});
+				}
+
+				// Links de download (simulação)
+				const downloadBtns = document.querySelectorAll('.download-btn');
+				downloadBtns.forEach(btn => {
+					btn.addEventListener('click', function (e) {
+						e.preventDefault();
+						alert('Download do PDF iniciado');
+						// Na implementação real, faria o download do arquivo
+					});
+				});
+			});
+			document.addEventListener('DOMContentLoaded', function () {
+				// Função para abrir modais
+				function openModal(modalId) {
+					document.getElementById(modalId).style.display = 'block';
+					document.body.style.overflow = 'hidden'; // Impede scroll da página
+				}
+
+				// Função para fechar modais
+				function closeModal(modalId) {
+					document.getElementById(modalId).style.display = 'none';
+					document.body.style.overflow = 'auto'; // Restaura scroll da página
+				}
+
+				// Event listeners para abrir modais
+				const modalTriggers = document.querySelectorAll('.modal-trigger');
+				modalTriggers.forEach(trigger => {
+					trigger.addEventListener('click', function (e) {
+						e.preventDefault();
+						const modalId = this.getAttribute('data-modal');
+						openModal(modalId);
+					});
+				});
+
+				// Event listeners para fechar modais
+				const closeButtons = document.querySelectorAll('.close-modal');
+				closeButtons.forEach(button => {
+					button.addEventListener('click', function () {
+						const modal = this.closest('.modal');
+						closeModal(modal.id);
+					});
+				});
+
+				// Fechar modal ao clicar fora do conteúdo
+				const modals = document.querySelectorAll('.modal');
+				modals.forEach(modal => {
+					modal.addEventListener('click', function (e) {
+						if (e.target === this) {
+							closeModal(this.id);
+						}
+					});
+				});
+
+				// Modal específico para o mapa
+				document.getElementById('openMapModal').addEventListener('click', function () {
+					openModal('modal-mapa');
+				});
+
+				// Modal específico para a galeria
+				document.getElementById('openGallery').addEventListener('click', function () {
+					openModal('modal-galeria');
+				});
+
+				// Fechar modal com ESC
+				document.addEventListener('keydown', function (e) {
+					if (e.key === 'Escape') {
+						modals.forEach(modal => {
+							if (modal.style.display === 'block') {
+								closeModal(modal.id);
+							}
+						});
+					}
+				});
+
+				// Garantir que as imagens não ultrapassem os limites dos cards
+				const cardImages = document.querySelectorAll('.card-img');
+				cardImages.forEach(img => {
+					img.style.objectFit = 'cover';
+					img.style.width = '100%';
+					img.style.height = '100%';
+				});
+			});
+			document.addEventListener('DOMContentLoaded', function () {
+				// Efeito hover nos cards
+				const cards = document.querySelectorAll('.card');
+				cards.forEach(card => {
+					card.addEventListener('mouseenter', function () {
+						this.style.transform = 'translateY(-5px)';
+						this.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+					});
+
+					card.addEventListener('mouseleave', function () {
+						this.style.transform = '';
+						this.style.boxShadow = '';
+					});
+				});
+		});
+	</script>
 </body>
 
-</html>
+	</html>
